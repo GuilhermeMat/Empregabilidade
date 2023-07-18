@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Empregabilidade</title>
+</head>
+<body>
+    <div class="principal">
+    <header>
+
+    </header>
+        <div class="div_form">
+            <!--PREENCHIMENTO COM INFORMAÇÕES PESSOAIS-->
+            <form name="submit-to-google-sheet">
+                <h2>Informações Profissionais</h2>
+                <div class="div_informacoes_pessoais">
+                    <div class="div_nome">
+                        <label for="nome">Nome Completo:</label>
+                        <input id="nome" type="text" name="nome_completo" placeholder="NOME COMPLETO...">
+                    </div>
+                    <div class="div_cpf">
+                        <label for="cpf">CPF:</label>
+                        <input id="cpf" type="number" name="cpf" placeholder="CPF..." minlength="11" maxlength="11">
+                    </div>
+                    <div class="div_idt_militar">
+                        <label for="identidade_militar">Identidade Militar:</label>
+                        <input id="identidade_militar" type="number" name="identidade_militar" minlength="10" maxlength="10" placeholder="IDENTIDADE MILITAR...">
+                    </div>
+                    <div class="div_nascimento">
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input id="nascimento" type="date" name="nascimento">
+                    </div>
+                    <div class="div_telefone_pesssoal">
+                        <label for="telefone">Telefone Pessoal:</label>
+                        <input id="telefone" type="tel" name="telefone" minlength="11" maxlength="11" placeholder="TELEFONE PESSOAL...">
+                    </div>
+                    <div class="div_cep">
+                        <label for="cep">CEP:</label>
+                        <input id="cep" type="text" name="cep" placeholder="CEP..." minlength="8" maxlength="8">
+                    </div>
+                    <div class="div_endereco">
+                        <label for="endereco">Endereço:</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="ENDEREÇO...">
+                    </div>
+                </div>
+
+                <!--PREENCHIMENTO COM INFORMAÇÕES PROFISSIONAIS-->
+                <h2>Informações Profissionais</h2>
+                <div class="div_informacoes_profissionais">
+                    <div class="div_posto_graduacao">
+                        <label for="posto_graduacao">Posto ou Graduação:</label>
+                            <select name="posto_graduacao">
+                                <option>...</option>
+                                <option>1º Ten</option>
+                                <option>2º Ten</option>
+                                <option>3º Sgt</option>
+                                <option>Cb</option>
+                                <option>Sd</option>
+                            </select>
+                    </div>
+                    <div class="div_om">
+                        <label for="organizacao_militar">Organização Militar:</label>
+                        <select name="organizacao_militar">
+                            <option>...</option>
+                            <option>11º CENTRO DE GESTÃO, CONTABILIDADE E FINANÇAS DO EXÉRCITO</option>
+                            <option>11º DEPÓSITO DE SUPRIMENTO</option>
+                            <option>11º GRUPO DE ARTILHARIA ANTIAÉREA</option>
+                            <option>16º BATALHÃO LOGÍSTICO</option>
+                            <option>1ª BATERIA DE ARTILHARIA ANTIAÉREA</option>
+                            <option>1º BATALHÃO DE AÇÕES DE COMANDOS</option>
+                            <option>1º BATALHÃO DE FORÇAS ESPECIAIS</option>
+                            <option>1º BATALHÃO DE GUERRA ELETRÔNICA</option>
+                            <option>1º BATALHÃO DE OPERAÇÕES DE APOIO À INFORMAÇÃO</option>
+                            <option>1º REGIMENTO DE CAVALARIA DE GUARDAS</option>
+                            <option>23ª COMPANHIA DE ENGENHARIA DE COMBATE</option>
+                            <option>23º PELOTÃO DE POLÍCIA DO EXÉRCITO</option>
+                            <option>2º CENTRO DE GEOINFORMAÇÃO</option>
+                            <option>32º GRUPO DE ARTILHARIA DE CAMPANHA</option>
+                            <option>3º ESQUADRÃO DE CAVALARIA MECANIZADO</option>
+                            <option>41º BATALHÃO DE INFANTARIA MOTORIZADO</option>
+                            <option>58º BATALHÃO DE INFANTARIA MOTORIZADO</option>
+                            <option>6ª COMPANHIA DE COMUNICAÇÕES</option>
+                            <option>6º GRUPO DE MÍSSEIS E FOGUETES</option>
+                            <option>6º PELOTÃO DE POLÍCIA DO EXÉRCITO</option>
+                            <option>7ª COMPANHIA DE INTELIGÊNCIA</option>
+                            <option>7º CENTRO DE TELEMÁTICA DE ÁREA</option>
+                            <option>BASE ADMINISTRATIVA DA BRIGADA DE FORÇA DE PAZ</option>
+                            <option>BASE ADMINISTRATIVA DO CENTRO DE COMUNICAÇÕES E GUERRA ELETRÔNICA DO EXÉRCITO</option>
+                            <option>BASE ADMINISTRATIVA DO COMANDO DE OPERAÇÕES ESPECIAIS</option>
+                            <option>BASE ADMINISTRATIVA DO QUARTEL-GENERAL DO EXÉRCITO</option>
+                            <option>BASE DE ADMINISTRAÇÃO E APOIO DO COMANDO MILITAR DO PLANALTO</option>
+                            <option>BATALHÃO DA GUARDA PRESIDENCIAL</option>
+                            <option>BATALHÃO DE APOIO ÀS OPERAÇÕES ESPECIAIS</option>
+                            <option>BATALHÃO DE INFANTARIA DE FORÇA DE PAZ</option>
+                            <option>BATALHÃO DE POLÍCIA DO EXÉRCITO DE BRASÍLIA</option>
+                            <option>CENTRO DE COMUNICAÇÃO SOCIAL DO EXÉRCITO</option>
+                            <option>CENTRO DE COMUNICAÇÕES E GUERRA ELETRÔNICA DO EXÉRCITO</option>
+                            <option>CENTRO DE CONTROLE INTERNO DO EXÉRCITO</option>
+                            <option>CENTRO DE DESENVOLVIMENTO DE SISTEMAS</option>
+                            <option>CENTRO DE DOCUMENTAÇÃO DO EXÉRCITO</option>
+                            <option>CENTRO DE INSTRUÇÃO DE GUERRA ELETRÔNICA</option>
+                            <option>CENTRO DE INTELIGÊNCIA DO EXÉRCITO</option>
+                            <option>CENTRO DE LOGÍSTICA DE MÍSSEIS E FOGUETES</option>
+                            <option>CENTRO DE PAGAMENTO DO EXÉRCITO</option>
+                            <option>CENTRO INTEGRADO DE TELEMÁTICA DO EXÉRCITO</option>
+                            <option>COLÉGIO MILITAR DE BRASÍLIA</option>
+                            <option>COMANDO DA 11ª REGIÃO MILITAR</option>
+                            <option>COMANDO DA 3ª BRIGADA DE INFANTARIA MOTORIZADA</option>
+                            <option>COMANDO DE DEFESA AEROESPACIAL BRASILEIRO</option>
+                            <option>COMANDO DE DEFESA CIBERNÉTICA</option>
+                            <option>COMANDO DE OPERAÇÕES ESPECIAIS</option>
+                            <option>COMANDO DE OPERAÇÕES TERRESTRES</option>
+                            <option>COMANDO DO COMANDO MILITAR DO PLANALTO</option>
+                            <option>COMANDO LOGÍSTICO</option>
+                            <option>COMISSÃO DO EXÉRCITO BRASILEIRO EM WASHINGTON</option>
+                            <option>COMISSÃO REGIONAL DE OBRAS DA 11ª REGIÃO MILITAR</option>
+                            <option>COMPANHIA DE COMANDO DA 3ª BRIGADA DE INFANTARIA MOTORIZADA</option>
+                            <option>COMPANHIA DE COMANDO E CONTROLE</option>
+                            <option>COMPANHIA DE DEFESA QUÍMICA, BIOLÓGICA, RADIOLÓGICA E NUCLEAR</option>
+                            <option>DEPARTAMENTO DE CIÊNCIA E TECNOLOGIA</option>
+                            <option>DEPARTAMENTO DE ENGENHARIA E CONSTRUÇÃO</option>
+                            <option>DEPARTAMENTO-GERAL DO PESSOAL</option>
+                            <option>DIRETORIA DE ABASTECIMENTO</option>
+                            <option>DIRETORIA DE AVALIAÇÃO E PROMOÇÕES</option>
+                            <option>DIRETORIA DE CIVIS, INATIVOS, PENSIONISTAS E ASSISTÊNCIA SOCIAL</option>
+                            <option>DIRETORIA DE CONTABILIDADE</option>
+                            <option>DIRETORIA DE CONTROLE DE EFETIVOS E MOVIMENTAÇÕES</option>
+                            <option>DIRETORIA DE FISCALIZAÇÃO DE PRODUTOS CONTROLADOS</option>
+                            <option>DIRETORIA DE GESTÃO ESPECIAL</option>
+                            <option>DIRETORIA DE GESTÃO ORÇAMENTÁRIA</option>
+                            <option>DIRETORIA DE MATERIAL</option>
+                            <option>DIRETORIA DE MATERIAL DE AVIAÇÃO DO EXÉRCITO</option>
+                            <option>DIRETORIA DE MATERIAL DE COMUNICAÇÕES, ELETRÔNICA E INFORMÁTICA</option>
+                            <option>DIRETORIA DE MATERIAL DE ENGENHARIA</option>
+                            <option>DIRETORIA DE OBRAS DE COOPERAÇÃO</option>
+                            <option>DIRETORIA DE OBRAS MILITARES</option>
+                            <option>DIRETORIA DE PATRIMÔNIO IMOBILIÁRIO E MEIO AMBIENTE</option>
+                            <option>DIRETORIA DE SAÚDE</option>
+                            <option>DIRETORIA DE SERVIÇO MILITAR</option>
+                            <option>DIRETORIA DE SISTEMAS E MATERIAL DE EMPREGO MILITAR</option>
+                            <option>DIRETORIA DE TRANSPORTE E MOBILIZAÇÃO</option>
+                            <option>DIRETORIA DO SERVIÇO GEOGRÁFICO</option>
+                            <option>EME - ESTADO-MAIOR DO EXÉRCITO</option>
+                            <option>ESCOLA DE COMUNICAÇÕES</option>
+                            <option>ESCOLA DE INTELIGÊNCIA MILITAR DO EXÉRCITO</option>
+                            <option>ESTABELECIMENTO GENERAL GUSTAVO CORDEIRO DE FARIAS</option>
+                            <option>GABINETE DA VICE PRESIDÊNCIA DA REPÚBLICA</option>
+                            <option>GABINETE DE SEGURANÇA INSTITUCIONAL DA PRESIDÊNCIA DA REPÚBLICA</option>
+                            <option>GABINETE DO COMANDANTE DO EXÉRCITO</option>
+                            <option>HOSPITAL DAS FORÇAS ARMADAS</option>
+                            <option>HOSPITAL MILITAR DE ÁREA DE BRASÍLIA</option>
+                            <option>MINISTÉRIO DA DEFESA</option>
+                            <option>PREFEITURA MILITAR DE BRASÍLIA</option>
+                            <option>SECRETARIA DE ECONOMIA E FINANÇAS</option>
+                            <option>SECRETARIA-GERAL DO EXÉRCITO</option>
+                            <option>SUPERIOR TRIBUNAL MILITAR</option>
+                            <option>TIRO DE GUERRA DE ANÁPOLIS</option>
+                            <option>TIRO DE GUERRA DE IPORÁ</option>
+                            <option>TIRO DE GUERRA DE RIO VERDE</option>
+                        </select>
+                    </div>
+
+                    <div class="div_data_praca">
+                        <label for="data_de_praça">Data de Praça:</label>
+                        <input id="data_de_praca" type="date" name="data_de_praca">
+                    </div>
+
+                    <div class="div_curso">
+                        <label for="curso">Curso:</label>
+                        <input id="curso" type="text" name="cursos" placeholder="CURSO...">
+                    </div>
+
+                    <div class="div_instituicao">
+                        <label for="instituicao">Instituição</label>
+                        <input type="text" name="instituicao" id="instituicao" placeholder="ONDE REALIZOU O CURSO...">
+                    </div>
+
+                    <div class="div_area_interesse">
+                        <label for="interesse">Áreas de Interesse:</label>
+                        <select name="interesse">
+                            <option>...</option>
+                            <option>ADMINISTRAÇÃO, NEGÓCIOS E SERVIÇOS</option>
+                            <option>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</option>
+                            <option>ARTES E DESIGN</option>
+                            <option>CIÊNCIAS BIOLÓGICAS E DA TERRA</option>
+                            <option>CIÊNCIAS SOCIAIS E HUMANAS</option>
+                            <option>COMUNICAÇÃO E INFORMAÇÃO</option>
+                            <option>ENGENHARIA E PRODUÇÃO</option>
+                            <option>SAÚDE E BEM-ESTAR</option>
+                            <option>TRÂNSITO</option>
+                        </select>
+                    </div>
+                </div>
+                    <input class="btn1" type="submit" name="submit" value="Salvar">
+                <span id="success"></span>
+            </form>
+        </div>
+    </div>
+<script src="../js/script.js"></script>
+</body>
+</html>
